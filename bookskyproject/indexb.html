@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>BOOKbytes</title>
+        <link rel="icon" href="69-691535_clipart-sticky-note-png-transparent-png.png">
+        <link rel="stylesheet" href="indexb.css">
+</html>
+<body>
+    <div class="navbar">
+        <h1>BOOK Bytes!</h1>
+        <p>© Rishi frontend works</p>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>War and Peace..</h2>
+            <h4>Leo Tolstoy</h4>
+            <p>Often called the greatest novel ever written, and regarded as one of Tolstoy's finest literary achievements, this historical war epic is a celebration of Russian spirit.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book!</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button"id="add-popup-btn">+</button>
+    <script src="indexb.js"></script>  
+</body>
